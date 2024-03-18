@@ -33,9 +33,16 @@ body{
     margin:0 auto;
 }
 
+header{
+    background:url(imgs/header_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .header_top{
     padding:45px 0;
-    background-color: #D9D9D9;
+    background-color: #00000067;
 }
 
 .container_header_top{
@@ -45,7 +52,8 @@ body{
 
 .header_logo{
     font-size: 48px;
-    color:#000;
+    
+    color:#d9d9d9;
     text-shadow: 1px 2px 0 #969696, 1px 4px 4px #aba8a8;
 }
 
@@ -55,6 +63,7 @@ body{
     height: 100%;
     align-items: center;
     font-size: 24px;
+    color:#d9d9d9;
 }
 
 .button{
@@ -75,7 +84,6 @@ body{
 }
 
 .header_body{
-    background-color:#EDEDED;
     padding:150px 0 155px;
 }
 
@@ -87,6 +95,11 @@ body{
 .header_second_title{
     font-size: 40px;
     font-weight: normal;
+}
+
+.header_main_title,
+.header_second_title{
+    color:#d9d9d9;
 }
 
 .header_body_button{
