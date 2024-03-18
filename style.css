@@ -141,6 +141,10 @@ header{
     align-self: center;
 }
 
+.block{
+    padding-bottom: 240px;
+}
+
 @media screen and (max-width:1050px){
     .container_header_top{
         flex-direction: column;
