@@ -1,0 +1,159 @@
+@font-face {
+    font-family: interRegular;
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: interBold;
+    src: url(fonts/Inter-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    position:relative;
+    font-family: interRegular,sans-serif;
+}
+
+.container{
+    max-width: 1320px;
+    margin:0 auto;
+    outline: 1px solid red;
+}
+
+.header_top{
+    padding:45px 0;
+    background-color: #D9D9D9;
+}
+
+.container_header_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo{
+    font-size: 48px;
+    color:#000;
+    text-shadow: 1px 2px 0 #969696, 1px 4px 4px #aba8a8;
+}
+
+.page_links{
+    display: flex;
+    gap:50px;
+    height: 100%;
+    align-items: center;
+    font-size: 24px;
+}
+
+.button{
+    background-color:#FFEC43;
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(158,150,158,1);
+    -moz-box-shadow: -1px 3px 5px 0px rgba(158,150,158,1);
+    box-shadow: -1px 3px 5px 0px rgba(158,150,158,1);
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.header_feedback{
+    width: 175px;
+}
+
+.header_body{
+    background-color:#EDEDED;
+    padding:150px 0 155px;
+}
+
+.header_main_title{
+    font-size: 64px;
+    font-weight: normal;
+}
+
+.header_second_title{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.header_body_button{
+    max-width:280px;
+    margin-top: 45px;
+}
+
+.block{
+    padding-top: 85px;
+}
+
+.main_title{
+    font-size: 48px;
+}
+
+.main_descr{
+    font-size: 24px;
+    margin:55px 0 75px;
+}
+
+.main_options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.main_option{
+    display: flex;
+    gap:40px;
+}
+
+.option_img{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.option_text{
+    font-size: 24px;
+    align-self: center;
+}
+
+@media screen and (max-width:1050px){
+    .container_header_top{
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
+
+    .main_options{
+        grid-template-columns: 1fr;
+        max-width: 485px;
+        margin:0 auto;
+        gap:50px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .page_links{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:400px){
+    .main_option{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
